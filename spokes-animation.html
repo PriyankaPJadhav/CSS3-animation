@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style type="text/css">
+        .spokes-container {
+            display: block;
+            position: absolute;
+            top: 15.5%;
+            left: 14.5%;
+            background: #fff;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: thin;
+            border-color: transparent;
+            margin: 0em;
+            overflow: hidden;
+        }
+
+        .spokes-container .line {
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            left: 50%;
+            top: 50%;
+            transform-origin: left center;
+            transform: rotate(0deg);
+            background: #000;
+            animation-name: fadeLines;
+            opacity: 0;
+            animation-fill-mode: both;
+        }
+
+        .line:nth-child(1) {
+            animation-duration: 1.83s;
+            animation-delay: 0.5s;
+        }
+
+        .line:nth-child(2) {
+            transform: rotate(24deg);
+            animation-duration: 1.73s;
+            animation-delay: 1s;
+        }
+
+        .line:nth-child(3) {
+            transform: rotate(48deg);
+            animation-duration: 1.42s;
+            animation-delay: 1.1076s;
+        }
+
+        .line:nth-child(4) {
+            transform: rotate(72deg);
+            animation-duration: 1.29s;
+            animation-delay: 1.2s;
+        }
+
+        .line:nth-child(5) {
+            transform: rotate(96deg);
+            animation-duration: 1.82s;
+            animation-delay: 1.3s;
+        }
+
+        .line:nth-child(6) {
+            transform: rotate(120deg);
+            animation-duration: 1.97s;
+            animation-delay: 1.4s;
+        }
+
+        .line:nth-child(7) {
+            transform: rotate(144deg);
+            animation-duration: 1.52s;
+            animation-delay: 1.5s;
+        }
+
+        .line:nth-child(8) {
+            transform: rotate(168deg);
+            animation-duration: 1.48s;
+            animation-delay: 1.7s;
+        }
+
+        .line:nth-child(9) {
+            transform: rotate(192deg);
+            animation-duration: 1.99s;
+            animation-delay: 1.8s;
+        }
+        .line:nth-child(10) {
+            transform: rotate(216deg);
+            animation-duration:1.9;
+            animation-delay: 1.9s;
+        }
+        .line:nth-child(11) {
+            transform: rotate(240deg);
+            animation-duration:2.4s;
+            animation-delay:2s;
+        }
+        .line:nth-child(12) {
+            transform: rotate(264deg);
+            animation-duration:2.4s;
+            animation-delay:2.2s;
+        }
+        .line:nth-child(13) {
+            transform: rotate(288deg);
+            animation-duration:2.4s;
+            animation-delay:2.4s;
+        }
+        .line:nth-child(14) {
+            transform: rotate(312deg);
+            animation-duration:2.4s;
+            animation-delay:2.6s;
+        }
+        .line:nth-child(15) {
+            transform: rotate(336deg);
+            animation-duration:2.4s;
+            animation-delay:2.6s;
+        }
+
+        @keyframes fadeLines {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spokes-container">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>
